@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>NSI - Bootstrap Admin Dashboard </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+	<link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/calendar.css">
+</head>
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="side-menu">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                 <img class="logo-abbr" src="images/logo-white-2.png" alt="">
+                <img class="logo-compact" src="images/logo-text-white.png" alt="">
+                <img class="brand-title" src="images/logo-text-white.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="search_bar dropdown">
+                                <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <i class="mdi mdi-magnify"></i>
+                                </span>
+                                <div class="dropdown-menu p-0 m-0">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link bell ai-icon" href="#" role="button" data-toggle="dropdown">
+                                    <svg id="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+										<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" style="stroke-dasharray: 57, 77; stroke-dashoffset: 0;"></path>
+										<path d="M13.73 21a2 2 0 0 1-3.46 0" style="stroke-dasharray: 5, 25; stroke-dashoffset: 0;"></path>
+									</svg>
+                                    <div class="pulse-css"></div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-user"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Martin</strong> has added a <strong>customer</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-shopping-cart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Jennifer</strong> purchased Light Dashboard 2.0.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="danger"><i class="ti-bookmark"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Robin</strong> marked a <strong>ticket</strong> as unsolved.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-heart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>David</strong> purchased Light Dashboard 1.0.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-image"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong> James.</strong> has added a<strong>customer</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                    </ul>
+                                    <a class="all-notification" href="#">See all notifications <i class="ti-arrow-right"></i></a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <img src="images/profile/education/pic1.jpg" width="20" alt="">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="app-profile.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" style="stroke-dasharray: 25, 45; stroke-dashoffset: 0;"></path><path d="M8,7A4,4 0,1,1 16,7A4,4 0,1,1 8,7" style="stroke-dasharray: 26, 46; stroke-dashoffset: 0;"></path></svg>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    <a href="email-inbox.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" style="stroke-dasharray: 69, 89; stroke-dashoffset: 0;"></path><path d="M22,6L12,13L2,6" style="stroke-dasharray: 25, 45; stroke-dashoffset: 0;"></path></svg>
+                                        <span class="ml-2">Inbox </span>
+                                    </a>
+                                    <a href="page-login.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" style="stroke-dasharray: 29, 49; stroke-dashoffset: 0;"></path><path d="M16,17L21,12L16,7" style="stroke-dasharray: 15, 35; stroke-dashoffset: 0;"></path><path d="M21,12L9,12" style="stroke-dasharray: 12, 32; stroke-dashoffset: 0;"></path></svg>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="dlabnav">
+            <div class="dlabnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                    <li><a class="ai-icon" href="index-2.html" aria-expanded="false"><i class="la la-home"></i>
+						<span class="nav-text">My Schedule</span></a>
+                    </li>
+					<li><a class="ai-icon" href="#" aria-expanded="false"><i class="la la-users"></i>
+						<span class="nav-text">Assignments</span></a>
+                    </li>
+					<li><a class="ai-icon" href="#" aria-expanded="false"><i class="la la-graduation-cap"></i>
+						<span class="nav-text">Examination</span></a>
+                    </li>
+					 <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-users"></i>
+							<span class="nav-text">Messages</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="#">Messages</a></li>
+                            <li><a href="#">Create Group</a></li>
+                        </ul>
+                    </li>
+										
+               
+                    <li class="nav-label"></li>
+             
+				</ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+		
+		<!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+            <div class="container-fluid">  
+                <div class="row">
+					<div class="col-xl-8 col-lg-8 col-xxl-8 col-md-12">
+						<div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Student List</h4>
+                            </div>
+                            <div class="col-xl-6 col-xxl-6 col-sm-6">
+						<div class="card">
+							<img class="img-fluid" src="images/courses/pic1.jpg" alt="">
+							<div class="card-body">
+								<h4>Why is Early Education Essential?</h4>
+								<ul class="list-group mb-3 list-group-flush">
+									<li class="list-group-item px-0 border-top-0 d-flex justify-content-between"><span class="mb-0 text-muted">April 23</span>
+										<a href="javascript:void(0);"><i class="la la-heart-o mr-1"></i><strong>230</strong></a></li>
+									<li class="list-group-item px-0 d-flex justify-content-between">
+										<span class="mb-0">Duration :</span><strong>12 Months</strong></li>
+									<li class="list-group-item px-0 d-flex justify-content-between">
+										<span class="mb-0">Professor :</span><strong>Jack Ronan</strong></li>
+									<li class="list-group-item px-0 d-flex justify-content-between">
+										<span><i class="fa fa-graduation-cap text-primary mr-2"></i>Student</span><strong>+120</strong></li>
+								</ul>
+								<a href="about-courses.html" class="btn btn-primary">Read More</a>
+							</div>
+						</div>
+					</div>
+						</div>
+					</div>
+					<div class="col-xl-4">
+                        <div class="card">
+                            <div class="container-calendar">
+							  <div class="button-container-calendar">
+								  <button id="previous" onclick="previous()">&#8249;</button>
+								  <button id="next" onclick="next()">&#8250;</button>
+								  <h3 id="monthAndYear"></h3>
+							  </div>
+
+							  <table class="table-calendar" id="calendar" data-lang="en">
+								  <thead id="thead-month"></thead>
+								  <tbody id="calendar-body"></tbody>
+							  </table>
+
+							  <div class="footer-container-calendar">
+								  <label for="month">Jump To: </label>
+								  <select id="month" onchange="jump()">
+									  <option value=0>Jan</option>
+									  <option value=1>Feb</option>
+									  <option value=2>Mar</option>
+									  <option value=3>Apr</option>
+									  <option value=4>May</option>
+									  <option value=5>Jun</option>
+									  <option value=6>Jul</option>
+									  <option value=7>Aug</option>
+									  <option value=8>Sep</option>
+									  <option value=9>Oct</option>
+									  <option value=10>Nov</option>
+									  <option value=11>Dec</option>
+								  </select>
+								  <select id="year" onchange="jump()"></select>       
+							  </div>
+						  </div>
+                        </div>
+					</div>
+				</div>
+				<div class="">
+					<div class="row">
+					<div class="col-xl-6 col-lg-6 col-md-12">
+						<div class="card">
+							<img class="img-fluid" src="images/courses/Rectangle 287.png" alt="">
+							<div class="" style="">
+								<div class="card-body card-text">
+									<h2>Session 1 Learn to Code</h2>
+									<p>Business, Technology and Creative Skills taught by industry experts. Explore a wide range of skills with our professional tutorials.</p>
+									<a href="about-courses.html" class="btn btn-primary">Read More</a>
+									<a href="about-courses.html" class="btn btn-primary">Read More</a>
+									<a href="about-courses.html" class="btn btn-primary">Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-8 col-md-12">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="card">
+									<img class="img-fluid" src="images/courses/Rectangle 287.png" alt="">
+									<div class="" style="">
+										<div class="card-body card-text">
+											<h5>Course: Basic Security</h5>
+											<a href="about-courses.html" class="btn btn-primary">Join Now</a>
+											<a href="about-courses.html" class="btn btn-primary">Documents</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="card">
+									<img class="img-fluid" src="images/courses/Rectangle 287.png" alt="">
+									<div class="" style="">
+										<div class="card-body card-text">
+											<h5>Course: Basic Security</h5>
+											<a href="about-courses.html" class="btn btn-primary">Join Now</a>
+											<a href="about-courses.html" class="btn btn-primary">Documents</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="card">
+									<img class="img-fluid" src="images/courses/Rectangle 287.png" alt="">
+									<div class="" style="">
+										<div class="card-body card-text">
+											<h5>Course: Basic Security</h5>
+											<a href="about-courses.html" class="btn btn-primary">Join Now</a>
+											<a href="about-courses.html" class="btn btn-primary">Documents</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="card">
+									<img class="img-fluid" src="images/courses/Rectangle 287.png" alt="">
+									<div class="" style="">
+										<div class="card-body card-text">
+											<h5>Course: Basic Security</h5>
+											<a href="about-courses.html" class="btn btn-primary">Join Now</a>
+											<a href="about-courses.html" class="btn btn-primary">Documents</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+            </div>
+				</div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © Designed &amp; Developed by <a href="#" target="_blank">Bright Bytes Technology</a> 2020</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+		<!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="js/global.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/custom.min.js"></script>
+	<script src="js/dlabnav-init.js"></script>
+    <script src="js/main.js"></script>
+	<script src="js/calendar.js"></script>
+		
+	
+</body>
+</html>

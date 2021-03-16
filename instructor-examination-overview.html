@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>NSI - Bootstrap Admin Dashboard </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+	<link rel="stylesheet" href="css/bootstrap-select.min.css">
+	<link href="css/jquery.dataTables.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/calendar.css">
+</head>
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-compact" src="images/logo-text-white.png" alt="">
+                <img class="brand-title" src="images/logo-text-white.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="search_bar dropdown">
+                                <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <i class="mdi mdi-magnify"></i>
+                                </span>
+                                <div class="dropdown-menu p-0 m-0">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link bell ai-icon" href="#" role="button" data-toggle="dropdown">
+                                    <svg id="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+										<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+										<path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+									</svg>
+                                    <div class="pulse-css"></div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-user"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Martin</strong> has added a <strong>customer</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-shopping-cart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Jennifer</strong> purchased Light Dashboard 2.0.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="danger"><i class="ti-bookmark"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Robin</strong> marked a <strong>ticket</strong> as unsolved.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-heart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>David</strong> purchased Light Dashboard 1.0.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-image"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong> James.</strong> has added a<strong>customer</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                    </ul>
+                                    <a class="all-notification" href="#">See all notifications <i
+                                            class="ti-arrow-right"></i></a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <img src="images/profile/education/pic1.jpg" width="20" alt=""/>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="app-profile.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    <a href="email-inbox.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                        <span class="ml-2">Inbox </span>
+                                    </a>
+                                    <a href="page-login.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="dlabnav">
+            <div class="dlabnav-scroll" style="background-color: rgba(137,106,48,0.8);">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                    <li><a class="ai-icon" href="index-2.html" aria-expanded="false"><i class="la la-home"></i>
+						<span class="nav-text">My Schedule</span></a>
+                    </li>
+					<li><a class="ai-icon" href="#" aria-expanded="false"><i class="la la-users"></i>
+						<span class="nav-text">Assignments</span></a>
+                    </li>
+					<li><a class="ai-icon" href="#" aria-expanded="false"><i class="la la-graduation-cap"></i>
+						<span class="nav-text">Examination</span></a>
+                    </li>
+					 <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-users"></i>
+							<span class="nav-text">Messages</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="#">Messages</a></li>
+                            <li><a href="#">Create Group</a></li>
+                        </ul>
+                    </li>
+										
+               
+                    <li class="nav-label"></li>
+             
+				</ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+		
+		<!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <div class="container-fluid">
+				    
+				<div class="row">
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="widget-stat card bg-primary">
+							<div class="card-body">
+								<div class="media">
+									<span class="mr-3">
+										<i class="la la-users"></i>
+									</span>
+									<div class="media-body text-white">
+										<p class="mb-1">Completed Courses</p>
+										<h3 class="text-white">3280</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="widget-stat card bg-primary">
+							<div class="card-body">
+								<div class="media">
+									<span class="mr-3">
+										<i class="la la-user"></i>
+									</span>
+									<div class="media-body text-white">
+										<p class="mb-1">Assigned courses</p>
+										<h3 class="text-white">245</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="widget-stat card bg-primary">
+							<div class="card-body">
+								<div class="media">
+									<span class="mr-3">
+										<i class="la la-graduation-cap"></i>
+									</span>
+									<div class="media-body text-white">
+										<p class="mb-1">certificates</p>
+										<h3 class="text-white">28</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="widget-stat card bg-primary">
+							<div class="card-body">
+								<div class="media">
+									<span class="mr-3">
+										<i class="la la-dollar"></i>
+									</span>
+									<div class="media-body text-white">
+										<p class="mb-1">in progress</p>
+										<h3 class="text-white">25160$</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+				
+				</div>
+				<div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0">
+                        <div class="welcome-text">
+                            <h4>Instructor / Examination Overview</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0);">Examination Overview</a></li>
+                        </ol>
+                    </div>
+                </div>
+				
+				<div class="row">
+					<div class="col-xl-8 col-xxl-8 col-lg-8 col-md-12 col-sm-12">
+                        <div class="card" style="background: #e6e6e636;">
+                            <div class="card-header">
+                                <h5 class="card-title">Examination Overview</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table header-border table-hover verticle-middle">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Courses</th>
+                                                <th scope="col">No. of Trainee</th>
+												<th scope="col">Language</th>
+												<th scope="col">Exam Date</th>
+                                                <th scope="col">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>1</th>
+                                                <td>Working Design report</td>
+                                                <td class="text-center">30</td>
+												<td>Arabic</td>
+												<td>12-10-2020</td>
+                                                <td><span class="badge badge-rounded badge-primary">DONE</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th>2</th>
+                                                <td>Working Design report</td>
+                                                 <td class="text-center">30</td>
+												<td>Arabic</td>
+												<td>12-10-2020</td>
+                                                <td><span class="badge badge-rounded badge-primary">DONE</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th>3</th>
+                                                <td>Working Design report</td>
+                                                 <td class="text-center">30</td>
+												<td>Arabic</td>
+												<td>12-10-2020</td>
+                                                <td><span class="badge badge-rounded badge-primary">DONE</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th>4</th>
+                                                <td>Working Design report</td>
+                                                 <td class="text-center">30</td>
+												<td>Arabic</td>
+												<td>12-10-2020</td>
+                                                <td><span class="badge badge-rounded badge-primary">DONE</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th>5</th>
+                                                <td>Working Design report</td>
+                                                 <td class="text-center">30</td>
+												<td>Arabic</td>
+												<td>12-10-2020</td>
+                                                <td><span class="badge badge-rounded badge-primary">DONE</span></td>
+                                            </tr>
+											<tr>
+                                                <th>6</th>
+                                                <td>Working Design report</td>
+                                                 <td class="text-center">30</td>
+												<td>Arabic</td>
+												<td>12-10-2020</td>
+                                                <td><span class="badge badge-rounded badge-primary">DONE</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Notifications</h4>
+                            </div>
+                            <div class="card-body"> 
+                                <div class="widget-todo dz-scroll" style="height:370px;" id="DZ_W_Notifications">
+                                    <ul class="timeline">
+                                        <li>
+                                            <div class="timeline-badge primary"></div>
+                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="javascript:void(0);">
+                                                <img class="rounded-circle" alt="image" width="50" src="images/profile/education/pic1.jpg">
+												<div class="col">
+													<h5 class="mb-1">Dr sultads Send you Photo</h5>
+													<small class="d-block">29 July 2020 - 02:26 PM</small>
+												</div>
+											</a>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-badge warning"></div>
+                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="javascript:void(0);">
+                                                <img class="rounded-circle" alt="image" width="50" src="images/profile/education/pic2.jpg">
+												<div class="col">
+													<h5 class="mb-1">Resport created successfully</h5>
+													<small class="d-block">29 July 2020 - 02:26 PM</small>
+												</div>
+											</a>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-badge danger"></div>
+                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="javascript:void(0);">
+                                                <img class="rounded-circle" alt="image" width="50" src="images/profile/education/pic3.jpg">
+												<div class="col">
+													<h5 class="mb-1">Reminder : Treatment Time!</h5>
+													<small class="d-block">29 July 2020 - 02:26 PM</small>
+												</div>
+											</a>
+                                        </li>
+										<li>
+                                            <div class="timeline-badge success"></div>
+											<a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="javascript:void(0);">
+                                                <img class="rounded-circle" alt="image" width="50" src="images/profile/education/pic4.jpg">
+												<div class="col">
+													<h5 class="mb-1">Dr sultads Send you Photo</h5>
+													<small class="d-block">29 July 2020 - 02:26 PM</small>
+												</div>
+											</a>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-badge warning"></div>
+											<a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="javascript:void(0);">
+                                                <img class="rounded-circle" alt="image" width="50" src="images/profile/education/pic5.jpg">
+												<div class="col">
+													<h5 class="mb-1">Resport created successfully</h5>
+													<small class="d-block">29 July 2020 - 02:26 PM</small>
+												</div>
+											</a>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-badge dark"></div>
+                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="javascript:void(0);">
+                                                <img class="rounded-circle" alt="image" width="50" src="images/profile/education/pic6.jpg">
+												<div class="col">
+													<h5 class="mb-1">Reminder : Treatment Time!</h5>
+													<small class="d-block">29 July 2020 - 02:26 PM</small>
+												</div>
+											</a>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-badge info"></div>
+                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="javascript:void(0);">
+                                                <img class="rounded-circle" alt="image" width="50" src="images/profile/education/pic7.jpg">
+												<div class="col">
+													<h5 class="mb-1">Dr sultads Send you Photo</h5>
+													<small class="d-block">29 July 2020 - 02:26 PM</small>
+												</div>
+											</a>
+                                        </li>
+										<li>
+                                            <div class="timeline-badge danger"></div>
+                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="javascript:void(0);">
+                                                <img class="rounded-circle" alt="image" width="50" src="images/profile/education/pic8.jpg">
+												<div class="col">
+													<h5 class="mb-1">Resport created successfully</h5>
+													<small class="d-block">29 July 2020 - 02:26 PM</small>
+												</div>
+											</a>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-badge success"></div>
+                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="javascript:void(0);">
+                                                <img class="rounded-circle" alt="image" width="50" src="images/profile/education/pic9.jpg">
+												<div class="col">
+													<h5 class="mb-1">Reminder : Treatment Time!</h5>
+													<small class="d-block">29 July 2020 - 02:26 PM</small>
+												</div>
+											</a>
+                                        </li>
+										<li>
+                                            <div class="timeline-badge warning"></div>
+											<a class="timeline-panel text-muted d-flex align-items-center" href="javascript:void(0);">
+                                                <img class="rounded-circle" alt="image" width="50" src="images/profile/education/pic10.jpg">
+												<div class="col">
+													<h5 class="mb-1">Dr sultads Send you Photo</h5>
+													<small class="d-block">29 July 2020 - 02:26 PM</small>
+												</div>
+											</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+						</div>
+					</div>
+					<div class="col-xl-8 col-xxl-8 col-lg-8 col-md-12 col-sm-12">
+                        <div class="card" style="background: #e6e6e636;">
+                            <div class="card-header">
+                                <h5 class="card-title">Trainee List</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table header-border table-hover verticle-middle">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Enrolled Date</th>
+												<th scope="col">Course</th>
+												<th scope="col">Progress</th>
+                                                <th scope="col">Email</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img class="rounded-circle" width="35" src="images/profile/small/pic3.jpg" alt=""></td>
+                                                <td>Ricky Antony</td>
+                                                <td>12-12-2020</td>
+												<td>BSG</td>
+												<td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" style="width: 70%;" role="progressbar">
+															<span class="sr-only">70% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>ricky@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img class="rounded-circle" width="35" src="images/profile/small/pic3.jpg" alt=""></td>
+                                                <td>Ricky Antony</td>
+                                                <td>12-12-2020</td>
+												<td>BSG</td>
+												<td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" style="width: 70%;" role="progressbar">
+															<span class="sr-only">70% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>ricky@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img class="rounded-circle" width="35" src="images/profile/small/pic3.jpg" alt=""></td>
+                                                <td>Ricky Antony</td>
+                                                <td>12-12-2020</td>
+												<td>BSG</td>
+												<td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" style="width: 70%;" role="progressbar">
+															<span class="sr-only">70% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>ricky@gmail.com</td>
+                                            </tr>
+											<tr>
+                                                <td><img class="rounded-circle" width="35" src="images/profile/small/pic3.jpg" alt=""></td>
+                                                <td>Ricky Antony</td>
+                                                <td>12-12-2020</td>
+												<td>BSG</td>
+												<td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" style="width: 70%;" role="progressbar">
+															<span class="sr-only">70% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>ricky@gmail.com</td>
+                                            </tr>
+                                         
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="container-calendar">
+							  <div class="button-container-calendar">
+								  <button id="previous" onclick="previous()">&#8249;</button>
+								  <button id="next" onclick="next()">&#8250;</button>
+								  <h3 id="monthAndYear"></h3>
+							  </div>
+
+							  <table class="table-calendar" id="calendar" data-lang="en">
+								  <thead id="thead-month"></thead>
+								  <tbody id="calendar-body"></tbody>
+							  </table>
+
+							  <div class="footer-container-calendar">
+								  <label for="month">Jump To: </label>
+								  <select id="month" onchange="jump()">
+									  <option value=0>Jan</option>
+									  <option value=1>Feb</option>
+									  <option value=2>Mar</option>
+									  <option value=3>Apr</option>
+									  <option value=4>May</option>
+									  <option value=5>Jun</option>
+									  <option value=6>Jul</option>
+									  <option value=7>Aug</option>
+									  <option value=8>Sep</option>
+									  <option value=9>Oct</option>
+									  <option value=10>Nov</option>
+									  <option value=11>Dec</option>
+								  </select>
+								  <select id="year" onchange="jump()"></select>       
+							  </div>
+						  </div>
+                        </div>
+					</div>
+				</div>
+			   
+            </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © Designed &amp; Developed by <a href="#" target="_blank">Bright Bytes Technology</a> 2020</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+		<!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="js/global.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/custom.min.js"></script>
+	<script src="js/dlabnav-init.js"></script>
+    <script src="js/main.js"></script>
+	<script src="js/calendar.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+		
+	
+</body>
+</html>
